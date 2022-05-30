@@ -64,7 +64,9 @@ The default datasets folder is `data/`. To use a different folder, supply all sc
 ### Precompute all the text features
 
 ~~~bash
+mkdir ./data/activitynet
 python data_read_activitynet_meta.py
+mkdir ./data/youcook2
 python data_read_youcook2_meta.py
 python precompute_text.py activitynet --cuda
 python precompute_text.py youcook2 --cuda
@@ -72,7 +74,7 @@ python precompute_text.py youcook2 --cuda
 
 ### Download and extract video data
 
-**ActivityNet Captions:** [Download Torrent](https://academictorrents.com/details/0c824440c94cc18ace1cb2c77423919b728d703e)  ~52GB, please seed. [Mirror Google Drive](https://drive.google.com/file/d/1Gir-cRLhVpqjyADq55r5VF9Cs9YdOOz9/view?usp=sharing)
+**ActivityNet Captions:** [Download Torrent](https://academictorrents.com/details/0c824440c94cc18ace1cb2c77423919b728d703e)  ~62GB, please seed. [Mirror Google Drive](https://drive.google.com/file/d/1Gir-cRLhVpqjyADq55r5VF9Cs9YdOOz9/view?usp=sharing)
 
 ~~~bash
 # download features to data/activitynet/ and extract to
